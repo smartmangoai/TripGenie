@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center the text */
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 36px; /* Change font size */
+    color: #ff6600; /* Stylish color */
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #555;
+}
