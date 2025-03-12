@@ -15,36 +15,10 @@ body {
 }
 
 h1 {
-    <!-- Add this in the <head> section of your HTML -->
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     font-size: 45px;
-    font-family: 'Poetsen One', sans-serif;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;  /* 700 is bold */
     color: black;
     text-align: center; /* Center the text */
     margin-top: 160px;
 }
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poetsen One Font Example</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poetsen One', sans-serif;
-        }
-        h1 {
-            font-weight: normal;  /* Poetsen One is a single weight font, no need to specify bold */
-        }
-        p {
-            font-weight: normal;
-        }
-    </style>
-</head>
-<body>
-    <h1>This is a heading with Poetsen One font</h1>
-    <p>This is a paragraph with Poetsen One font.</p>
-</body>
-</html>
