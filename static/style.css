@@ -15,5 +15,6 @@ body {
 }
 
 h1 {
-    font-size: 10px;
+    font-size: 30px;
+    color: #ADD8E6; /* Light blue */
 }
