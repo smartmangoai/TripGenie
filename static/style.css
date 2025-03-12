@@ -15,12 +15,21 @@ body {
 }
 
 h1 {
-    <!-- Add this in the <head> section of your HTML -->
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    font-size: 25px;
+    font-size: 45px;
     color: black;
-    font-family: 'Poetsen One', sans-serif;
     text-align: center; /* Center the text */
     margin-top: 160px;
-    font-weight: 550;  /* 700 is bold */
+}
+
+@font-face {
+    font-family: 'Poetsen One';
+    src: url('/assets/fonts/PoetsenOne-Regular.woff2') format('woff2'),
+         url('/assets/fonts/PoetsenOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poetsen One', sans-serif;
 }
