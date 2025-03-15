@@ -1,6 +1,11 @@
 from flask import Flask, render_template, request
+import openai
+import os
 
 app = Flask(__name__)
+
+# Get the OpenAI API key from environment variables
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 @app.route('/')
 def home():
@@ -11,7 +16,8 @@ def home():
 def ask():
     if request.method == 'POST':
         user_input = request.form['user_input']
-        return f'You typed: {user_input}'  # Display the input after submission
+        # return f'You typed: {user_input}'  # Display the input after submission
+        return f'You typed: {user_input} {openai.api_key}'  # Display the input after submission
     return render_template('ask.html')
 
 if __name__ == '__main__':
