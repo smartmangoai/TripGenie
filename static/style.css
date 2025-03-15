@@ -2,7 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center; /* Center the text */
     margin-top: 50px;
-    background-color: #ADD8E6;  /* Light Blue */
+    height: 100vh;  /* Make the background cover the whole screen */
+    margin: 0;
+    background: linear-gradient(to bottom, #ff6600, #ADD8E6);
 }
 
 .title {
@@ -16,19 +18,18 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Arial', sans-serif;
     font-weight: 600;  /* 700 is bold */
-    color: #69a4b8;
+    color: #31748c;
     text-align: center; /* Center the text */
-    margin-top: 225px;
+    margin-top: 300px;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 50px;
     font-family: 'Arial', sans-serif;
     font-weight: 600;  /* 700 is bold */
     color: #f0fbff;
     text-align: center; /* Center the text */
-    margin-top: 300px;
 }
