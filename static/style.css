@@ -4,7 +4,7 @@ body {
     margin-top: 50px;
     height: 100vh;  /* Make the background cover the whole screen */
     margin: 0;
-    background: linear-gradient(to bottom, #f0fbff, #ADD8E6);
+    background: linear-gradient(to bottom, #f0fbff, #83c0d4);
 }
 
 .title {
@@ -21,7 +21,7 @@ h1 {
     font-size: 60px;
     font-family: 'Arial', sans-serif;
     font-weight: 600;  /* 700 is bold */
-    color: #31748c;
+    color: #5ca7bf;
     text-align: center; /* Center the text */
     margin-top: 300px;
 }
