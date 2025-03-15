@@ -18,7 +18,7 @@ def ask():
     if request.method == 'POST':
         user_input = request.form['user_input']
         answer = get_openai_answer(user_input)
-    return render_template('ask.html', anwer=answer)
+    return render_template('ask.html', answer=answer)
 
 def get_openai_answer(question):
     try:
