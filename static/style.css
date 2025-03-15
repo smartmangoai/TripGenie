@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center; /* Center the text */
     margin-top: 50px;
+    background-color: #ADD8E6;  /* Light Blue */
 }
 
 .title {
@@ -15,10 +16,19 @@ body {
 }
 
 h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;  /* 700 is bold */
+    color: #69a4b8;
+    text-align: center; /* Center the text */
+    margin-top: 225px;
+}
+
+h2 {
     font-size: 25px;
     font-family: 'Arial', sans-serif;
     font-weight: 600;  /* 700 is bold */
-    color: black;
+    color: #f0fbff;
     text-align: center; /* Center the text */
-    margin-top: 160px;
+    margin-top: 300px;
 }
