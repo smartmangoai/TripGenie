@@ -4,7 +4,7 @@ body {
     margin-top: 50px;
     height: 100vh;  /* Make the background cover the whole screen */
     margin: 0;
-    background: linear-gradient(to bottom, #f0fbff, #83c0d4);
+    background: linear-gradient(to bottom, #f0fbff, #2894b8);
 }
 
 .title {
@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-size: 60px;
-    font-family: 'Chela One', cursive;  /* Apply Chela One font */
+    font-family: 'Balsamiq Sans', cursive;
     font-weight: 600;  /* 700 is bold */
     color: #5ca7bf;
     text-align: center; /* Center the text */
