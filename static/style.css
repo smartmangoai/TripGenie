@@ -19,16 +19,16 @@ body {
 
 h1 {
     font-size: 60px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Chela One', cursive;  /* Apply Chela One font */
     font-weight: 600;  /* 700 is bold */
     color: #5ca7bf;
     text-align: center; /* Center the text */
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 h2 {
     font-size: 45px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;  /* 700 is bold */
     color: #f0fbff;
     text-align: center; /* Center the text */
