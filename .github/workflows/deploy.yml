@@ -19,12 +19,12 @@ jobs:
         host: 54.242.9.44
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Pass the OpenAI API key as an environment variable
         script: |
           cd /var/www/html/flask_app
           git pull origin main
           source ~/.bashrc
           source ~/venv/bin/activate  # Activate virtual environment
+          # Export OpenAI API Key for this session
+          export OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
           sudo systemctl restart flask_app
           sudo systemctl restart httpd
