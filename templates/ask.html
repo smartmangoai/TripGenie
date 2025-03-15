@@ -42,11 +42,17 @@
         }
 
         h1 {
-            margin-top: 25px;
+            margin-top: 50px;
             text-align: center; /* Center the text */
             font-size: 40px;
         }
 
+        .box {
+            width: 100%;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid black;
+        }
     </style>
 </head>
 <body>
@@ -60,8 +66,10 @@
     </form>
 
     {% if answer %}
-    <h2>Responses:</h2>
-    <p>{{ answer }}</p>
+    <h1>Responses</h1>
+    <div class="box">
+        <p>{{ answer }}</p>
+    </div>
     {% endif %}
 
 </body>
