@@ -22,8 +22,6 @@ jobs:
         script: |
           cd /var/www/html/flask_app
           git pull origin main
-          # Set OpenAI API Key as environment variable for Flask
-          echo "export OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> ~/.bashrc
           source ~/.bashrc
           source ~/venv/bin/activate  # Activate virtual environment
           sudo systemctl restart flask_app
