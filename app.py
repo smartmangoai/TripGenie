@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request
-import openai
+from openai import OpenAI
 import os
 
 app = Flask(__name__)
 
-# Get the OpenAI API key from environment variables
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(
+    # This is the default and can be omitted
+    api_key=os.environ.get("OPENAI_API_KEY"),
+)
 
 @app.route('/')
 def home():
@@ -22,12 +24,12 @@ def ask():
 
 def get_openai_answer(question):
     try:
-        response = openai.Completion.create(
-            engine="text-davinci-003",  # Use your desired OpenAI model
-            prompt=question,
-            max_tokens=150
+        response = client.responses.create(
+            model="gpt-4o",
+            instructions="You are a friendly, respectful person who likes to chat.",
+            input=question,
         )
-        return response.choices[0].text.strip()
+        return response.output_text
     except Exception as e:
         return f"Error: {str(e)}"
 
