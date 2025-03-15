@@ -43,7 +43,6 @@
 
         h1 {
             margin-top: 250px;
-            text-align: center; /* Center the text */
             font-size: 40px;
         }
 
@@ -58,6 +57,11 @@
         <input type="text" id="user_input" name="user_input" required>
         <button type="submit">Submit</button>
     </form>
+
+    {% if answer %}
+    <h2>Answer from OpenAI:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
 
 </body>
 </html>
