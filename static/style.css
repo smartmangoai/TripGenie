@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-size: 60px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: font-family: 'Madimi One', sans-serif;
     font-weight: 700;  /* 700 is bold */
     color: #5ca7bf;
     text-align: center; /* Center the text */
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-size: 45px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     font-weight: 600;  /* 700 is bold */
     color: #69b5cf;
     text-align: center; /* Center the text */
